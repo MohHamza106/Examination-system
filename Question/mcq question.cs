@@ -14,7 +14,8 @@ namespace Examination_system.Question
         public override void DisplayQuestion()
         {
             Console.WriteLine($"[MCQ] {Header}");
-            Console.WriteLine($"{Body} (Mark: {Mark})");
+        Console.WriteLine( $"Mark:{Mark}");
+            Console.WriteLine($"question: {Body} ");
             foreach (var answer in AnswerList)            
                 Console.WriteLine(answer);  
         }

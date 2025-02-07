@@ -19,7 +19,6 @@ namespace Examination_system.Question
         public override void DisplayQuestion()
         {
             Console.WriteLine($"[True or False] {Header}");
-            Console.WriteLine($"{Body} ");
             Console.WriteLine($"Mark: {Mark}");
             foreach (var answer in AnswerList)
             {
@@ -31,10 +30,10 @@ namespace Examination_system.Question
             Console.Write("Enter your answer (1 for True, 2 for False): ");
             if (int.TryParse(Console.ReadLine(), out int userAnswer) && userAnswer == RightAnswer)
             {
-                Console.WriteLine("Correct!");
+                Console.WriteLine("Correct");
                 return true;
             }
-            Console.WriteLine("Incorrect!");
+            Console.WriteLine("Incorrect");
             return false;
         }
 
